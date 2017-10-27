@@ -1,0 +1,162 @@
+nav.menu {
+	width: 262px;
+	padding-top: 14px;
+	display: none;
+	padding-right: 20px;
+
+	@media (min-width: $responsive-tablet) {
+		display: block;
+	}
+
+	li {
+		margin-bottom: 11px;
+
+		&:last-child {
+			padding-left: 46px;
+		}
+	}
+
+	.item-icon {
+		display: block;
+		margin-right: 10px;
+		min-width: 36px;
+		order: -1;
+
+		&:before {
+			display: block;
+			content: '';
+			margin: 0 auto;
+			background: url('../images/ui/sprite.png') no-repeat;
+		}
+	}
+
+	a {
+		font-size: 14px;
+		color: #000;
+		display: flex;
+		align-items: center;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&.menu-item-1 {
+
+			.item-icon {
+				
+				&:before {
+					width: 31px;
+					height: 13px;
+					background-position: 0 -94px;
+				}
+			}
+		}
+
+		&.menu-item-2 {
+
+			.item-icon {
+				
+				&:before {
+					width: 20px;
+					height: 20px;
+					background-position: 0 -108px;
+				}
+			}
+		}
+
+		&.menu-item-3 {
+
+			.item-icon {
+				
+				&:before {
+					width: 20px;
+					height: 23px;
+					background-position: 0 -129px;
+				}
+			}
+		}
+
+		&.menu-item-4 {
+
+			.item-icon {
+
+				&:before {
+					width: 31px;
+					height: 13px;
+					background-position: 0 -153px;
+				}
+			}
+		}
+
+		&.menu-item-5 {
+
+			.item-icon {
+
+				&:before {
+					width: 23px;
+					height: 23px;
+					background-position: 0 -167px;
+				}
+			}
+		}
+
+		&.menu-item-6 {
+
+			.item-icon {
+				
+				&:before {
+					width: 15px;
+					height: 22px;
+					background-position: 0 -191px;
+				}
+			}
+		}
+
+		&.menu-item-7 {
+
+			.item-icon {
+
+				&:before {
+					width: 30px;
+					height: 15px;
+					background-position: 0 -214px;
+				}
+			}
+		}
+
+		&.menu-item-8 {
+
+			.item-icon {
+				
+				&:before {
+					width: 15px;
+					height: 28px;
+					background-position: 0 -230px;
+				}
+			}
+		}
+
+		&.menu-item-9 {
+
+			.item-icon {
+				
+				&:before {
+					width: 23px;
+					height: 18px;
+					background-position: 0 -259px;
+				}
+			}
+		}
+
+		&.menu-item-10 {
+
+			.item-icon {
+				&:before {
+					width: 36px;
+					height: 15px;
+					background-position: 0 -278px;
+				}
+			}			
+		}
+	}
+}

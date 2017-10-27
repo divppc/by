@@ -62,3 +62,25 @@ ul {
 	height: 100%;
 	object-fit: cover;
 }
+
+.flickity-viewport {
+	width: 100%;
+}
+
+.flickity-page-dots {
+	bottom: 20px;
+
+	@media (min-width: $responsive-tablet) {
+		bottom: -25px;
+	}
+
+	.dot {
+		width: 8px;
+		height: 8px;
+		background: #726b61;
+
+		&.is-selected {
+			background: #262626;
+		}
+	}
+}
