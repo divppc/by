@@ -173,4 +173,137 @@ section.main {
 			font-style: normal;
 		}
 	}
+
+	.flickity-page-dots {
+		bottom: 20px;
+
+		@media (min-width: $responsive-tablet) {
+			bottom: -15px;
+		}
+	}
+}
+
+section.advantages {
+	margin-bottom: 40px;
+	background: #f9f9f9;
+
+	@media (min-width: $responsive-laptop) {
+		margin-bottom: 53px;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	.advantages-list {
+		display: flex;
+
+		&:after {
+			content: 'flickity';
+  		display: none;
+
+			@media (min-width: $responsive-laptop) {
+				content: '';
+			}
+		}
+	}
+
+	.advantage {
+		text-align: center;
+		width: 100%;
+		background: #f7f2e6;
+		min-height: 150px;
+		padding-top: 85px;
+		position: relative;
+
+		@media (min-width: $responsive-mobile) {
+			width: 50%;
+		}
+
+		@media (min-width: $responsive-tablet) {
+			width: 33%;
+		}
+
+		@media (min-width: $responsive-laptop) {
+			width: 20%;
+		}
+
+		&:not(:last-child) {
+
+			@media (min-width: $responsive-mobile) {
+				border-right: 1px solid #d8d4c9;
+			}
+		}
+
+		&:before {
+			display: block;
+			content: '';
+			position: absolute;
+			top: 28px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: url('../images/ui/sprite.png') no-repeat;
+		}
+
+		p {
+			font-size: 16px;
+			color: #5f96ce;
+			margin: 0 auto;
+			max-width: 90px;
+		}
+
+		&:nth-child(1) {
+
+			&:before {
+				width: 85px;
+				height: 37px;
+				background-position: 0 -294px;
+			}
+		}
+
+		&:nth-child(2) {
+
+			&:before {
+				width: 35px;
+				height: 44px;
+				background-position: 0 -332px;
+			}
+		}
+
+		&:nth-child(3) {
+
+			p {
+				max-width: 190px;
+			}
+
+			&:before {
+				width: 35px;
+				height: 60px;
+				top: 12px;
+				background-position: 0 -377px;
+			}
+		}
+
+		&:nth-child(4) {
+
+			&:before {
+				width: 43px;
+				height: 43px;
+				background-position: 0 -438px;
+			}
+		}
+
+		&:nth-child(5) {
+
+			&:before {
+				width: 47px;
+				height: 46px;
+				background-position: 0 -482px;
+			}
+		}
+	}
+
+	.flickity-page-dots {
+		bottom: -15px;
+	}
 }

@@ -8,8 +8,15 @@ $(document).ready(function () {
     // $('.menu-line').toggleClass('active');
   });
 
-  // similar offers carousel
+  // banners slider on main page
   $('.main-slider').flickity({
+    contain: true,
+    watchCSS: true,
+    prevNextButtons: false
+  });
+
+  // advantages slider
+  $('.advantages-list').flickity({
     cellAlign: 'right',
     contain: true,
     watchCSS: true,

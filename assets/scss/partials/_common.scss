@@ -68,11 +68,6 @@ ul {
 }
 
 .flickity-page-dots {
-	bottom: 20px;
-
-	@media (min-width: $responsive-tablet) {
-		bottom: -25px;
-	}
 
 	.dot {
 		width: 8px;
