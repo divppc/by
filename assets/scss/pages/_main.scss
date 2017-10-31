@@ -169,11 +169,11 @@ section.main {
 }
 
 section.advantages {
-	margin-bottom: 40px;
+	padding-bottom: 40px;
 	background: #f9f9f9;
 
 	@media (min-width: $responsive-laptop) {
-		margin-bottom: 53px;
+		padding-bottom: 53px;
 	}
 
 	.advantages-list {
@@ -266,10 +266,11 @@ section.advantages {
 }
 
 section.brands {
-	margin-bottom: 50px;
+	background: #f9f9f9;
+	padding-bottom: 50px;
 
 	@media (min-width: $responsive-laptop) {
-		margin-bottom: 145px;
+		padding-bottom: 145px;
 	}
 
 	.brands-list {
@@ -352,7 +353,7 @@ section.brands {
 		}
 	}
 
-	.brand {
+	.brand a{
 		display: block;
 		width: 111px;
 		height: 111px;
@@ -380,4 +381,8 @@ section.brands {
 			transform: translate(-50%, -50%);
 		}
 	}
+}
+
+section.sales {
+	background: #f9f9f9;
 }

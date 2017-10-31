@@ -42,6 +42,7 @@ a {
 	text-decoration: none;
 	transition: 0.3s;
 	cursor: pointer;
+	outline: none;
 }
 
 button {
@@ -123,7 +124,7 @@ ul {
 
 .items-list {
 	display: flex;
-	margin-bottom: 71px;
+	padding-bottom: 71px;
 
 	&.five-items {
 
@@ -225,7 +226,7 @@ ul {
 		}
 	}
 
-	.like-label {
+	.add-to-favourite-label {
 		width: 27px;
 		height: 25px;
 		cursor: pointer;
@@ -354,7 +355,7 @@ ul {
 	}
 }
 
-.add-to-watchlist {
+.add-to-comparelist {
 	display: block;
 	width: 33px;
 	height: 18px;
@@ -404,4 +405,65 @@ ul {
 
 .slick-slide {
 	outline: none;
+}
+
+.slick-arrow {
+	display: block;
+	width: 42px;
+	height: 42px;
+	-webkit-border-radius: 21px;
+	-moz-border-radius: 21px;
+	border-radius: 21px;
+	background-color: #5284c8;
+	-webkit-box-shadow: 0 0 14px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 14px rgba(0,0,0,.3);
+	box-shadow: 0 0 14px rgba(0,0,0,.3);
+	position: absolute;
+	top: 50%;
+	text-indent: -999px;
+	overflow: hidden;
+	z-index: 2;
+	transition: 0.3s;
+
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 12px;
+		height: 18px;
+		background: url('../images/ui/sprite.png') no-repeat;
+	}
+
+	&.slick-next {
+		right: 0;
+		transform: translate(50%, -50%);
+
+		@media (min-width: $responsive-mobile) {
+			transform: translate(0, -50%);
+		}
+
+		&:before {
+			background-position: 0 -652px;
+		}		
+	}
+
+	&.slick-prev {
+		left: 0;
+		transform: translate(-50%, -50%);
+
+		@media (min-width: $responsive-mobile) {
+			transform: translate(0, -50%);
+		}
+		
+		&:before {
+			background-position: 0 -633px;
+		}
+	}
+
+	&.slick-disabled {
+		opacity: 0.69;
+	}
 }
